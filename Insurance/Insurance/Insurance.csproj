@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5C42770-2762-4CAC-B760-71436E3FB03F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Insurance</RootNamespace>
+    <AssemblyName>Insurance</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Win32Resource>
+    </Win32Resource>
+    <ApplicationIcon>insurance-256x256.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SkinSoft.OSSkin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=669afa176ca71378, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup.Designer.cs">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base.cs" />
+    <Compile Include="BasicIO.cs" />
+    <Compile Include="DefDocName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefDocName.Designer.cs">
+      <DependentUpon>DefDocName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefTreatmentArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefTreatmentArea.Designer.cs">
+      <DependentUpon>DefTreatmentArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EncDec.cs" />
+    <Compile Include="FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui.Designer.cs">
+      <DependentUpon>gui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsuranceKD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsuranceKD.Designer.cs">
+      <DependentUpon>InsuranceKD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsuranceKDNMJA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsuranceKDNMJA.Designer.cs">
+      <DependentUpon>InsuranceKDNMJA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsurancePercent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsurancePercent.Designer.cs">
+      <DependentUpon>InsurancePercent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsurancePrintInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsurancePrintInfo.Designer.cs">
+      <DependentUpon>InsurancePrintInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsuranceTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsuranceTE.Designer.cs">
+      <DependentUpon>InsuranceTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersianKeyboard.cs" />
+    <Compile Include="PrintDGV.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Backup.resx">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefDocName.resx">
+      <DependentUpon>DefDocName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefTreatmentArea.resx">
+      <DependentUpon>DefTreatmentArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui.resx">
+      <DependentUpon>gui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsuranceKD.resx">
+      <DependentUpon>InsuranceKD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsuranceKDNMJA.resx">
+      <DependentUpon>InsuranceKDNMJA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsurancePercent.resx">
+      <DependentUpon>InsurancePercent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsurancePrintInfo.resx">
+      <DependentUpon>InsurancePrintInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsuranceTE.resx">
+      <DependentUpon>InsuranceTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pw.resx">
+      <DependentUpon>Pw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PwChange.resx">
+      <DependentUpon>PwChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports2.resx">
+      <DependentUpon>Reports2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsPre.resx">
+      <DependentUpon>ReportsPre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pw.Designer.cs">
+      <DependentUpon>Pw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PwChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PwChange.Designer.cs">
+      <DependentUpon>PwChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports2.Designer.cs">
+      <DependentUpon>Reports2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsPre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsPre.Designer.cs">
+      <DependentUpon>ReportsPre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zipper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash-final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skin.pw.png" />
+    <None Include="root.sqlite">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="insurance-256x256.ico" />
+    <None Include="license.crt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
